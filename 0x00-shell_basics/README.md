@@ -1,1 +1,1 @@
-Read me so this will work :)
+This script prints the current working directory (the directory you are currently in). 
