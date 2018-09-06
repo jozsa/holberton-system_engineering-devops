@@ -1,0 +1,1 @@
+Scripts to become more familiar with permissions, users, owners in bash.
