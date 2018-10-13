@@ -1,1 +1,0 @@
-Various scripts to print working directory, list files in various formats, create symbolic link, copy html files, delete files.
