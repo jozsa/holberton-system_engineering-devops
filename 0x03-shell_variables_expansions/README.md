@@ -2,6 +2,7 @@
 ## Description
 
 This project contains scripts dealing with variables, expansions, shell arithmetic operations, and the `alias` command
+
 File | Task
 -----|-----
 0-alias | Create an alias named `ls` whose value is `rm *`
