@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Lists current directory after first dash
-for i in `ls`; do
-	echo "$i" | cut --complement -d '-' -f 1
+for i in *; do
+	echo "$i" | cut -d '-' -f2
 done
