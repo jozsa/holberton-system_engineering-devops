@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Tests if a file is empty or not
+hbtn_file="holbertonschool"
+if [ ! -e $hbtn_file ]
+then
+	echo holbertonschool file does not exist
+else
+	echo holbertonschool file exists
+	if [ ! -s $hbtn_file ]
+	then
+		echo holbertonschool file is empty
+	else
+		echo holbertonschool file is not empty
+		if [ -f $hbtn_file ]
+		then
+			echo holbertonschool is a regular file
+		fi
+	fi
+fi
