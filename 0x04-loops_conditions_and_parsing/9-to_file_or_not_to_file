@@ -11,9 +11,9 @@ else
 		echo holbertonschool file is empty
 	else
 		echo holbertonschool file is not empty
-		if [ -f $hbtn_file ]
-		then
-			echo holbertonschool is a regular file
-		fi
+	fi
+	if [ -f $hbtn_file ]
+	then
+		echo holbertonschool is a regular file
 	fi
 fi
