@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+# List ALL processes in user-oriented format with process hierarchy
 ps -A f x u
