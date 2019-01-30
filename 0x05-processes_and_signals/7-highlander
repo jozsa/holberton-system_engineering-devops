@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Prints To infinity and beyond indefinitely, trapping SIGTERM signal
+trap invincible 15
+invincible()
+{	
+	echo I am invincible!!!
+}
+while true
+do
+	echo To infinity and beyond
+	sleep 2
+done
