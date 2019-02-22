@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Ping an IP address passed as an argument
+MESSAGE="Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+ping -c5 "$1" 2>/dev/null
+if [ -z "$1" ]
+then
+	echo "$MESSAGE"
+fi
