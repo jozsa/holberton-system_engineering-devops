@@ -2,4 +2,4 @@
 # Installs a nginx server listening at port 80 w/ custom "home" page
 apt-get install -y nginx
 service nginx start
-echo "Holberton School for the win!" > /usr/share/nginx/html/index.html
+echo "Holberton School r0x0rz" > /usr/share/nginx/html/index.html
