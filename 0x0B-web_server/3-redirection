@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Installs a nginx server and sets 301 redirection to larian.com 
+apt-get update
 apt-get install -y nginx
 service nginx start
 echo "Holberton School for the win!" > /usr/share/nginx/html/index.html
