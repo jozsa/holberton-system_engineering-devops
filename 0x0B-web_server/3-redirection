@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Installs a nginx server and sets 301 redirection to larian.com 
 ./1-install_nginx_web_server
-sed -i '30 i\ \tlocation /redirect_me/ {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}\n' /etc/nginx/sites-enabled/default
+sed -i '30 i\ \tlocation /redirect_me/ {\n\t\treturn 301 larian.com;\n\t}\n' /etc/nginx/sites-enabled/default
 service nginx restart
