@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 # Configure custom 404 page
-apt-get update -y
-apt-get install -y nginx
-echo "Holberton School for the win!" > /usr/share/nginx/html/index.html
-sed -i '30 i\ \tlocation /redirect_me/ {\n\t\treturn 301 larian.com;\n\t}\n' /etc/nginx/sites-enabled/default
+./3-redirection
 echo "Ceci n'est pas une page" > /usr/share/nginx/html/404.html
 sed -i '30 i\ \terror_page 404 /404.html;\n' /etc/nginx/sites-enabled/default 
 service nginx restart
