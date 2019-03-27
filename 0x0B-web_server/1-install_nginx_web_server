@@ -3,5 +3,4 @@
 apt-get update -y
 apt-get install -y nginx
 echo "Holberton School for the win!"  > /usr/share/nginx/html/index.html
-nginx -g "listen 80;"
 service nginx restart
