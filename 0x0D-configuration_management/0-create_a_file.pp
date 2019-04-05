@@ -1,6 +1,6 @@
 # Creates a file in /tmp/ named 'holberton'
 file { '/tmp/holberton':
-  ensure  => 'present',
+  ensure  => 'file',
   path    => '/tmp/holberton',
   mode    => '0744',
   owner   => 'www-data',
