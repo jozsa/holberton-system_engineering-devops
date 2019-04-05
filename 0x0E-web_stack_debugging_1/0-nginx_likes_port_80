@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Makes all active ipv4 addresses listen to port 80
-cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sed -i -e 's/8080/80/g' /etc/nginx/sites-enabled/default
 service nginx restart
