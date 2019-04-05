@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Makes all active ipv4 addresses listen to port 80
+cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo apt-get -y install lsof
+kill "$(lsof -t -i :8080)"
+service nginx restart
