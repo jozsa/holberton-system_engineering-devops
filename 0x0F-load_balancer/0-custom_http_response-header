@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Configure custom http header
+sed -i '36 i\ \tadd_header X-Served-By 397-web-01;\n' /etc/nginx/sites-enabled/default
+service nginx restart
