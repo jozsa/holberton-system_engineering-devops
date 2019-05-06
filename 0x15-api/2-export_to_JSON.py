@@ -30,7 +30,7 @@ if __name__ == '__main__':
     json_dict = {user_id: [{"task": task.get('title'),
                             "completed": task.get('completed'),
                             "username": username}
-                            for task in task_list]}
+                           for task in task_list]}
 
     # Export json data into json file
     with open('{}.json'.format(user_id), 'w') as fp:
