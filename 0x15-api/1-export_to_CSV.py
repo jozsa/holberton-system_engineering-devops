@@ -7,32 +7,33 @@ Exports data in CSV format
 """
 
 
-import csv
-import requests
-import sys
+if __name__ == '__main__':
+    import csv
+    import requests
+    import sys
 
-# URL to make API requests from
-url = 'https://jsonplaceholder.typicode.com'
+    # URL to make API requests from
+    url = 'https://jsonplaceholder.typicode.com'
 
-# User ID to request
-user_id = sys.argv[1]
+    # User ID to request
+    user_id = sys.argv[1]
 
-# Employee information
-employee = requests.get('{}/users/{}'.format(url, user_id))
-username = employee.json().get('username')
+    # Employee information
+    employee = requests.get('{}/users/{}'.format(url, user_id))
+    username = employee.json().get('username')
 
-# Todo list information
-tasks = requests.get('{}/todos?userId={}'.format(url, user_id))
-task_list = tasks.json()
+    # Todo list information
+    tasks = requests.get('{}/todos?userId={}'.format(url, user_id))
+    task_list = tasks.json()
 
-# List of rows to insert into CSV file
-row_list = [[user_id,
-             username,
-             task.get('completed'),
-             task.get('title')]
-            for task in task_list]
+    # List of rows to insert into CSV file
+    row_list = [[user_id,
+                 username,
+                 task.get('completed'),
+                 task.get('title')]
+                for task in task_list]
 
-# Insert rows into CSV file
-with open('{}.csv'.format(user_id), 'w') as f:
-    writer = csv.writer(f, quoting=csv.QUOTE_ALL)
-    writer.writerows(row_list)
+    # Insert rows into CSV file
+    with open('{}.csv'.format(user_id), 'w') as f:
+        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
+        writer.writerows(row_list)
