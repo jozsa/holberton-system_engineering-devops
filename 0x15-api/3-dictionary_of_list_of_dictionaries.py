@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """
-Returns information about an employee
-whose ID is passed into the script.
-
-Exports data in JSON format
+Exports into a JSON file all tasks and
+all employees they are associated with
+in a dictionary of lists of dictionaries.
 """
 
 
