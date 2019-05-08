@@ -51,18 +51,6 @@ What you should learn from this project:
 ### [9. Process and PID file](./100-process_and_pid_file)
 * Write a Bash script that: 
 
-
-### [10. Manage my process](./101-manage_my_process)
-* 
-
-
-### [11. Zombie](./102-zombie.c)
-* 
-
-
-### [12. Screencast](./103-screencast_unix_signal)
-* Now that you have mastered signals, how about sharing your knowledge?
-
 ---
 
 ## Author
