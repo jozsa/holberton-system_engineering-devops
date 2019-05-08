@@ -2,6 +2,7 @@
 
 ## Description
 What you should learn from this project:
+* More on how to debug web stacks
 
 ---
 
