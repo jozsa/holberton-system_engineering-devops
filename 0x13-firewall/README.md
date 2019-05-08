@@ -2,6 +2,7 @@
 
 ## Description
 What you should learn from this project:
+* How to configure a firewall on your server using ufw
 
 ---
 

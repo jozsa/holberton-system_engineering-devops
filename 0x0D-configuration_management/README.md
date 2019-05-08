@@ -2,6 +2,7 @@
 
 ## Description
 What you should learn from this project:
+* How to use Puppet to configure your web stack
 
 ---
 
