@@ -2,11 +2,12 @@
 
 ## Description
 What you should learn from this project:
+* How to debug a web stack to fix all issues
 
 ---
 
 ### [0. Give me a page!](./0-give_me_a_page)
-* Be sure to read the Docker concept page.
+* Write a script that fixes your web server configuration so that it will respond to requests
 
 ---
 
