@@ -36,11 +36,6 @@ What you should learn from this project:
 ### [7. OMG WHY ARE YOU SHOUTING?](./7-OMG_WHY_ARE_YOU_SHOUTING.rb)
 * 
 
-
-### [8. Textme](./100-textme.rb)
-* This exercise was prepared for you by Guillaume Plessis, VP of Infrastructure at TextMe. It is something he uses daily. You can thank Guillaume for his project on Twitter.
-
-
 ### [9. Pass LinkedIn technical interview level0](./101-passed_linkedin_regex_challenge.jpg)
 * One way to get started in getting a Software Engineering job at LinkedIn is to solve their regex puzzle.
 
