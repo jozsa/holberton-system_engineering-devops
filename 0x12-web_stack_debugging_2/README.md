@@ -2,11 +2,12 @@
 
 ## Description
 What you should learn from this project:
+* More on debugging web stacks
 
 ---
 
 ### [0. Run software as another user](./0-iamsomeonelese)
-* 
+* Write a script that runs the whoami command as the user passed into the script
 
 
 ### [1. Run Nginx as Nginx](./1-run_nginx_as_nginx)
