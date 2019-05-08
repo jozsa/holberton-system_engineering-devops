@@ -55,22 +55,6 @@ What you should learn from this project:
 ### [10. FizzBuzz](./10-fizzbuzz)
 * Write a Bash script that displays numbers from 1 to 100.
 
-
-### [11. Read and cut](./100-read_and_cut)
-* help: read
-
-
-### [12. Tell the story of passwd](./101-tell_the_story_of_passwd)
-* 
-
-
-### [13. Let's parse Apache logs](./102-lets_parse_apache_logs)
-* 
-
-
-### [14. Dig the data](./103-dig_the-data)
-* Now that you’ve parsed the Apache log file, let’s sort the data so you can get a better idea of what is going on.
-
 ---
 
 ## Author
