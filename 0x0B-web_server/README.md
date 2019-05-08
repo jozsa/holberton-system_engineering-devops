@@ -29,14 +29,6 @@ What you should learn from this project:
 ### [4. Not found page 404](./4-not_found_page_404)
 * Configure your Nginx server to have a custom 404 page that contains the string Ceci n'est pas une page.
 
-
-### [5. Design a beautiful 404 page](./5-design_a_beautiful_404_page)
-* Some of my favorites:
-
-
-### [6. Deploy fast, deploy well](./fabfile.py)
-* Readme:
-
 ---
 
 ## Author
