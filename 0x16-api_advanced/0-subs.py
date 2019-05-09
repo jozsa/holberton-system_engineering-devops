@@ -11,7 +11,8 @@ def number_of_subscribers(subreddit):
     url = 'https://reddit.com/r'
 
     # Subscriber count information
-    subscriber_count = requests.get('{}/{}/about.json'.format(url, subreddit),
+    subscriber_count = requests.get('{}/{}/about.json?subscribers'
+                                    .format(url, subreddit),
                                     headers={'User-Agent': 'Mozilla/5.0'}) \
         .json().get('data').get('subscribers')
 
