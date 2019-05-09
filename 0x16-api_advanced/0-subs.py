@@ -7,6 +7,9 @@ import sys
 
 
 def number_of_subscribers(subreddit):
+    """
+    Queries a subreddit and returns the number of subscribers.
+    """
     # URL and headers to make API requests from
     url = 'https://reddit.com/r'
 

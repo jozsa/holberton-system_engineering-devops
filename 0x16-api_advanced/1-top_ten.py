@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 """
-This module has one function: number_of_subscribers(subreddit).
+This module has one function: top_ten(subreddit).
 """
 import requests
 import sys
 
 
 def top_ten(subreddit):
+    """
+    Queries a subreddit and returns the top ten posts
+    """
     # URL and headers to make API requests from
     url = 'https://reddit.com/r'
 
