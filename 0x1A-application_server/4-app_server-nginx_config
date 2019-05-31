@@ -1,0 +1,43 @@
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server ipv6only=on;
+
+        root /usr/share/nginx/html;
+        index index.html index.htm;
+
+        # Make site accessible from http://localhost/
+        server_name localhost;
+
+        error_page 404 /404.html;
+
+        location /redirect_me/ {
+                return 301 larian.com;
+        }
+
+        add_header X-Served-By 397-web-01;
+
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                try_files $uri $uri/ =404;
+                # Uncomment to enable naxsi on this location
+                # include /etc/nginx/naxsi.rules
+        }
+
+        location /hbnb_static/ {
+                alias /data/web_static/current/;
+                index index.html;
+        }
+
+        location /airbnb-onepage/ {
+                proxy_pass http://127.0.0.1:5000;
+        }
+
+        location /airbnb-dynamic/number_odd_or_even/ {
+                proxy_pass http://127.0.0.1:5001/number_odd_or_even/;
+        }
+
+        location /api/ {
+                proxy_pass http://127.0.0.1:5002/api/;
+        }
+}
